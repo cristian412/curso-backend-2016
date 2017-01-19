@@ -1,8 +1,17 @@
-- nombre = "Cristian"
-%h1 Bienvenido hola mundo
-%p 
-  / esto es un comentario
-  Estamos usando haml. Hola 
-  / = nombre
-%p
-  =link_to "Cerrar Sesión",destroy_user_session_path, method: :delete
+.top-space
+	.row.center-xs
+		.col-xs-8.col-md-10
+			.row
+				.col-lg-2.col-sm-3.col-xs-10
+					%ul.remove-bullet-points.text-left
+						%li=link_to "Explorar","#"
+						%li=link_to "Explorar","#"
+						%li=link_to "Explorar","#"
+						%li=link_to "Explorar","#"
+				.col-xs-10
+					.col-sm
+						.white.large-padding	
+							hola mundo
+							=render "posts/form"
+						#post
+							=render @posts

@@ -1,0 +1,10 @@
+-if user_signed_in?
+	%header.mdl-layout__header.mdl-layout__header--scroll
+		.mdl-layout__header-row.white-text
+			%span.mdl-layout-title FacilitoCo
+			.mdl-layout-spacer
+			%nav.mdl-navigation
+			=link_to "Cerrar Sesión ", destroy_user_session_path, method: :delete,class:"white-text"
+	.mdl-layout__drawer
+		%span.mdl-layout-title FacilitoCoo
+		%nav.mdl-navigation

@@ -29,9 +29,31 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem  'devise', github: "plataformatec/devise"
 gem 'omniauth-facebook'
+# Flexbox rb
+gem 'flexbox_rb'
+# Annotate
+gem 'annotate'
+# Best in place for better edit forms
+gem 'best_in_place', "~>3.0.1"
+# Paperclip para subir archivos
+gem 'paperclip', "~>5.0.0.beta1"
+# Remotipart to upload file via ajax
+gem 'remotipart', github:"urielhdz/remotipart"
+# AASM para state machines
+gem 'aasm'
+#Activemodel serializers xml to work with draper
+gem 'activemodel-serializers-xml',github:'rails/activemodel-serializers-xml'
+#Draper para nuestros decorators
+gem 'draper', github: "audionerd/draper",branch:"rails5"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :test do
+	gem 'shoulda-matchers'
+	gem 'rspec-rails',"~> 3.5.0.beta1"
+	gem 'factory_girl_rails', "~> 4.0"
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
