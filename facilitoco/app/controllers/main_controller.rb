@@ -2,7 +2,11 @@ class MainController < ApplicationController
 
 	def home
 		@post = Post.new
-		@posts = Post.all
+		@posts = Post.all_for_user(current_user).paginate(page:params[:page],per_page:15)
+		respond_to do |format| 
+			format.html { } 
+			format.js { } 
+		end
 	end
 	
 	def unregistered

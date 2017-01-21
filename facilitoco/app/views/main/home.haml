@@ -13,5 +13,9 @@
 						.white.large-padding	
 							hola mundo
 							=render "posts/form"
-						#post
-							=render @posts
+						#posts
+							.data
+								=render @posts
+							#pagination
+								=will_paginate @posts
+						%div{style:"height:100px"}

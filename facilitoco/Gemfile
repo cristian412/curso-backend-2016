@@ -45,6 +45,8 @@ gem 'aasm'
 gem 'activemodel-serializers-xml',github:'rails/activemodel-serializers-xml'
 #Draper para nuestros decorators
 gem 'draper', github: "audionerd/draper",branch:"rails5"
+# will paginate para paginacion
+gem 'will_paginate'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
